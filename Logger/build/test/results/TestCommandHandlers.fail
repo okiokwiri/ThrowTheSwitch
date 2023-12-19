@@ -1,0 +1,82 @@
+---
+:source:
+  :path: test
+  :file: TestCommandHandlers.c
+:successes:
+- :test: test_CommandHandlerClock_should_GetTimeStamp_when_Empty
+  :line: 16
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerClock_should_setTimeStamp_when_FourBytesLong
+  :line: 33
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerClock_should_IgnoreUndersizedMessages
+  :line: 52
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerClock_should_IgnoreOversizedMessages
+  :line: 60
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHanlerArm_should_ReturnError_when_GivenInvalidData
+  :line: 85
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerTrigger_shouldReturnTriggerStyle_when_NotSuppliedStyle
+  :line: 96
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerTrigger_should_Trigger_Now_when_SuppliedWithValidStyle
+  :line: 109
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandler_should_ThrowError_Trigger_Now_is_supplied_WithInvalidData
+  :line: 120
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerTrigger_should_TriggerOnBitChange_when_Suppliedwith_ValidMask
+  :line: 130
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerTrigger_should_TriggerOnBitState_whenSupplied_withValidMaskAndState
+  :line: 140
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerTrigger_should_returnError_On_TriggerOnBitState_whenSupplied_with_InvalidData
+  :line: 152
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandler_should_Trigger_OnBitsSequence_whenSupplied_withShortestSequence
+  :line: 168
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandler_should_Trigger_OnBitSequence_whenSuppliedWith_LongestSequence
+  :line: 179
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerTrigger_should_ReturnErrors_when_TriggerOnSequenceAndNotCorrectBytes
+  :line: 199
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerTrigger_should_Trigger_when_TriggerOnTimestamp_WithValidData
+  :line: 209
+  :message: ''
+  :unity_test_time: 0
+- :test: test_CommandHandlerTrigger_should_ReturnErrors_when_TriggerOnTimeButInvalidLength
+  :line: 224
+  :message: ''
+  :unity_test_time: 0
+:failures:
+- :test: test_CommandHandlerResults_should_FillResults_when_CapturingResultsSucceeds
+  :line: 77
+  :message: Function Capture_GetResult.  Pointer is NULL.
+  :unity_test_time: 0
+:ignores: []
+:counts:
+  :total: 17
+  :passed: 16
+  :failed: 1
+  :ignored: 0
+:stdout: []
+:time: 0.025021300003572833
